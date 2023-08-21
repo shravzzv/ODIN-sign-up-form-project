@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 body > div {
@@ -49,7 +50,7 @@ aside::after {
   position: absolute;
   color: white;
   bottom: 10px;
-  text-align: center;
+  left: 100px;
 }
 
 main {

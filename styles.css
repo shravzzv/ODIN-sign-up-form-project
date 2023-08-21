@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Norse-bold;
-  src: url(assets/Norse-Bold.otf);
+  src: url(./fonts/Norse-Bold.otf);
 }
 
 body {

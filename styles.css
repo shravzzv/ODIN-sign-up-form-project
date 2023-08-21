@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Norse-bold;
+  src: url(assets/Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+}
+
+body > div {
+  display: flex;
+}
+
+aside {
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-color: #596d48;
+  min-height: 100vh;
+  flex: 1;
+}
+
+aside > div {
+  background-color: rgba(92, 90, 90, 0.5);
+  height: 20vh;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 5em;
+}
+
+aside > div > img {
+  max-height: 100%;
+}
+
+aside > div > span {
+  font-family: Norse-bold, sans-serif;
+  color: white;
+  font-size: 6rem;
+}
+
+aside::after {
+  content: 'Photo by Hallie West on Unsplash';
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  text-align: center;
+}
+
+main {
+  flex: 2;
+}

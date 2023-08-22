@@ -9,14 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <aside>
-        <div>
-          <img src="assets/odin-lined.png" alt="logo" class="logo" />
-          <span>ODIN</span>
+      <aside class="aside">
+        <div class="aside__content">
+          <img src="assets/odin-lined.png" class="aside__logo" alt="logo" />
+          <span class="aside__text">ODIN</span>
         </div>
         <p class="aside__credit">
           Photo by
           <a
+            class="aside__link"
             href="https://unsplash.com/photos/25xggax4bSA"
             target="_blank"
             rel="noopener"
@@ -24,6 +25,7 @@
           >
           on
           <a
+            class="aside__link"
             href="https://unsplash.com/@haliewestphoto"
             target="_blank"
             rel="noopener"
@@ -31,52 +33,65 @@
           >.
         </p>
       </aside>
-      <main>
-        <p>
+
+      <main class="main">
+        <p class="main__para">
           This is not a real online service! You know need something like this
           in your life to help you realize your deepest dreams.
         </p>
-        <p>You know you want to.</p>
-        <form action="" method="">
-          <h1>Let's do this!</h1>
-          <ul>
-            <li class="form-control">
-              <label for="first-name">First name</label>
-              <input type="text" id="first-name" name="first_name" />
-            </li>
-            <li class="form-control">
-              <label for="last-name">Last name</label>
-              <input type="text" id="last-name" name="last_name" />
-            </li>
-            <li class="form-control">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-            </li>
-            <li class="form-control">
-              <label for="phone">Phone number</label>
-              <input type="tel" name="phone" id="phone" />
-            </li>
-            <li class="form-control">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                class="error"
-              />
-            </li>
-            <li class="form-control">
-              <label for="confirm-password">Confirm password</label>
-              <input
-                type="password"
-                name="confirm_password"
-                id="confirm-password"
-                class="error"
-              />
-            </li>
-          </ul>
-          <button type="submit">Create Account</button>
-          <p>Already have an accoun? <a href="">Log in</a></p>
+        <p class="main__para">You know you want to.</p>
+
+        <form action="" method="" class="form">
+          <fieldset>
+            <h1 class="form__heading">Let's do this!</h1>
+
+            <ul class="form__list">
+              <li class="form-control">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first_name" />
+              </li>
+
+              <li class="form-control">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last_name" />
+              </li>
+
+              <li class="form-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </li>
+
+              <li class="form-control">
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" />
+              </li>
+
+              <li class="form-control">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="error"
+                />
+              </li>
+
+              <li class="form-control">
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm-password"
+                  class="error"
+                />
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="form__submit">Create Account</button>
+          <p class="form__paralogin">
+            Already have an accoun? <a href="#">Log in</a>
+          </p>
         </form>
       </main>
     </div>

@@ -73,7 +73,9 @@
                   name="password"
                   id="password"
                   class="error"
+                  required
                 />
+                <span id="password-match">*Passwords do not match</span>
               </li>
 
               <li class="form-control">
@@ -83,6 +85,7 @@
                   name="confirm_password"
                   id="confirm-password"
                   class="error"
+                  required
                 />
               </li>
             </ul>
@@ -94,6 +97,26 @@
           </p>
         </form>
       </main>
+
+      <script>
+        const pwdEl = document.querySelector('#password')
+        const pwdCfrEl = document.querySelector('#confirm-password')
+        const pwdMtchTxt = document.querySelector('#password-match')
+        const frmEl = document.querySelector('form')
+
+        pwdMtchTxt.style.display = 'none'
+
+        const handleSubmit = (e) => {
+          if (pwdEl.value !== pwdCfrEl.value) {
+            pwdMtchTxt.style.display = 'inline'
+            e.preventDefault()
+          } else {
+            pwdMtchTxt.style.display = 'none'
+          }
+        }
+
+        frmEl.addEventListener('submit', handleSubmit)
+      </script>
     </div>
   </body>
 </html>

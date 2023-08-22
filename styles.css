@@ -49,6 +49,7 @@ aside > div > span {
   position: relative;
   top: 50%;
   text-align: center;
+  color: white;
 }
 
 .aside__credit a {

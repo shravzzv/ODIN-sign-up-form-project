@@ -45,12 +45,14 @@ aside > div > span {
   font-size: 6rem;
 }
 
-aside::after {
-  content: 'Photo by Hallie West on Unsplash';
-  position: absolute;
-  color: white;
-  bottom: 10px;
-  left: 100px;
+.aside__credit {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+.aside__credit a {
+  color: inherit;
 }
 
 main {
